@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Contoh Program Javascript</title>
+</head>
+    <script lang="Javascript">
+
+    // Deklarasi function test
+    function test() {
+    // Deklarasi variabel val1 dan Menginput nilai val1
+    val1 = window.prompt("Input Nilai (1-5) : ")
+    switch (val1)
+    {
+
+    // Jika nilai val1 = 1 maka case 1 dijalankan
+    case "1" : 
+    document.write("Bilangan Satu")
+    break
+
+    // Jika nilai val1 = 2 maka case 2 dijalankan
+    case "2" : 
+    document.write("Bilangan Dua")
+    break
+
+    // Jika nilai val1 = 3 maka case 3 dijalankan
+    case "3" : 
+    document.write("Bilangan Tiga")
+    break
+
+    // Jika nilai val1 = 4 maka case 4 dijalankan
+    case "4" : 
+    document.write("Bilangan Empat")
+    break
+
+    // Jika nilai val1 = 5 maka case 5 dijalankan
+    case "5" : 
+    document.write("Bilangan Lima")
+    break
+
+    // Jika nilai val1 bukan salah satu dari semua case diatas
+    // maka default dijalankan
+    default :
+    document.write("Bilangan Lainnya")
+    }
+
+    }
+
+    </script>
+<body>
+    <!-- Button yang akan menampilkan function test -->
+    <input type="button" value="Button1" value="Switch" onclick=test()>
+
+</body>
+</html>

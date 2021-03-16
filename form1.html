@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Contoh Form Input</title>
+</head>
+    <script lang="JavaScript">
+
+    // Deklarasi function test
+    function test() {
+    // Deklarasi nilai val1 dan 
+    var val1 = document.kirim.T1. value 
+    // Jika val1 Modulus 2
+    if (val1%2 == 0) {
+    document.kirim.T2. value = "Bilangan Genap" // Mencetak val1 jika Hasil Modulus = 0
+
+    } 
+    else {
+    document.kirim.T2. value = "Bilangan Ganjil" // Mencetak val1 jika Hasil Modulus = 1
+    } 
+            
+    }
+
+    </script>
+<body>
+    <!--  -->
+    <form method="post" name="kirim">
+    
+    <!-- Menginput bilangan -->
+    <p>BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+    
+    <!-- Menampilkan hasil bilangan -->
+    <p> <input type="button" value="TEBAK" name="B1" onclick=test()></p>
+
+</form>
+</body>
+</html>

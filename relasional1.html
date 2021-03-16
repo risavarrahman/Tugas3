@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Contoh Program Javascript</title>
+</head>
+    <script lang="Javascript">
+
+    // Deklarasi function test
+    function test() {
+
+    // Deklarasi variabel val1 dan val2
+    val1 = window.prompt("Nilai 1 : ") // Menginput nilai val1
+    val2 = window.prompt("Nilai 2 : ") // Menginput nilai val2
+
+    // Membandingkan nilai val1 dan val2
+    document.write("<br>" + "val1 == val2" + "<br>")
+    // Mencetak nilai True or False
+    document.write(val1 == val2)
+    
+    // Membandingkan nilai val1 dan val2
+    document.write("<br>" + "val1 != val2" + "<br>")
+    // Mencetak nilai True or False
+    document.write(val1 != val2)
+
+    // Membandingkan nilai val1 dan val2
+    document.write("<br>" + "val1 > val2" + "<br>")
+    // Mencetak nilai True or False
+    document.write(val1 > val2)
+
+    // Membandingkan nilai val1 dan val2
+    document.write("<br>" + "val1 < val2" + "<br>")
+    // Mencetak nilai True or False
+    document.write(val1 < val2)
+    }
+    
+    </script>
+<body>
+    <!-- Button yang akan menampilkan function test -->
+    <input type="button" value="Button1" value="Relational" onclick=test()>
+
+</body>
+</html>

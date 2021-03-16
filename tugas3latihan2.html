@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan 2 Javascript</title>
+  </head>
+  <body>
+    Bil 1 :
+    <input type="number" id="bil1">
+    <br><br>
+    Bil 2 :
+    <input type="number" id="bil2">
+    <br><br>
+    <input type="button" name="button_tambah" value="+" onclick="tambah()">
+    <input type="button" name="button_kurang" value="-" onclick="kurang()">
+    <input type="button" name="button_kali" value="x" onclick="kali()">
+    <input type="button" name="button_bagi" value="/" onclick="bagi()">
+    <br><br>
+    Hasil :
+    <input type="text" name="" value="" readonly id="hasil">
+    <br>
+    <p id="last_change"></p>
+    <script lang = "javascript">
+      function tambah()
+      {
+        bil1 = parseInt(document.getElementById("bil1").value);
+        bil2 = parseInt(document.getElementById("bil2").value);
+        hasil = bil1+bil2;
+        last = "Dimodifikasi terakhir pada " + document.lastModified;
+        document.getElementById("hasil").value = hasil;
+        document.getElementById("last_change").innerHTML = last;
+      }
+
+      function kurang()
+      {
+        bil1 = parseInt(document.getElementById("bil1").value);
+        bil2 = parseInt(document.getElementById("bil2").value);
+        hasil = bil1-bil2;
+        last = "Dimodifikasi terakhir pada " + document.lastModified;
+        document.getElementById("hasil").value = hasil;
+        document.getElementById("last_change").innerHTML = last;
+      }
+
+      function kali()
+      {
+        bil1 = parseInt(document.getElementById("bil1").value);
+        bil2 = parseInt(document.getElementById("bil2").value);
+        hasil = bil1*bil2;
+        last = "Dimodifikasi terakhir pada " + document.lastModified;
+        document.getElementById("hasil").value = hasil;
+        document.getElementById("last_change").innerHTML = last;
+      }
+
+      function bagi()
+      {
+        bil1 = parseInt(document.getElementById("bil1").value);
+        bil2 = parseInt(document.getElementById("bil2").value);
+        hasil = bil1/bil2;
+        last = "Dimodifikasi terakhir pada " + document.lastModified;
+        document.getElementById("hasil").value = hasil;
+        document.getElementById("last_change").innerHTML = last;
+      }
+    </script>
+  </body>
+</html>

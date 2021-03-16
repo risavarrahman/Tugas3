@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Latihan 1 Javascript</title>
+</head>
+<body>
+    <!-- <input type="button" name="Cek" value="Cek Nilai" onclick=cek()> -->
+    <script>
+        // function cek() {
+            var nilai = prompt("Masukkan Nilai Anda (0-100): ");
+            var hasil = "";    
+            if (nilai > 100 || nilai < 0){
+                hasil = "Nilai Diluar Range ! ";
+            }else if (nilai > 80) {
+                hasil = "A";
+            }else if (nilai > 70) {
+                hasil = "AB";
+            }else if (nilai > 65) {
+                hasil = "B";
+            }else if (nilai > 60) {
+                hasil = "BC";
+            }else if (nilai > 55) {
+                hasil = "C";
+            }else if (nilai > 40) {
+                hasil = "D";
+            }else{
+                hasil = "E";
+            }
+            document.write("Nilai Anda : " + hasil);
+        // }
+
+
+    </script>
+    
+</body>
+</html>
